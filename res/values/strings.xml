@@ -2,10 +2,13 @@
 <resources>
 
     <string name="app_name">Babel Cards Proto</string>
+   	<string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
     <string name="title_section1">Create/Edit</string>
     <string name="title_section2">Stats</string>
     <string name="title_section3">Review</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+
+    <string name="content_stats">Here are the stats : 100% cool</string>
 
 </resources>
