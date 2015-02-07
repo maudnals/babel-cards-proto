@@ -114,13 +114,13 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 			// instantiates the fragment for the given page
 			switch (position) {
 			case 0:
-				return TabCreateFragment.newInstance("TabCreateFragment, Instance 1");
+				return TabCreateFragment.newInstance("TabCreateFragment");
 			case 1:
-				return TabStatsFragment.newInstance("TabStatsFragment, Instance 1");
+				return TabStatsFragment.newInstance("TabStatsFragment");
 			case 2:
-				return TabCreateFragment.newInstance("FirstFragment, Instance 1");
+				return TabReviewFragment.newInstance("TabReviewFragment");
 			default:
-				return TabCreateFragment.newInstance("FirstFragment, Instance 1");
+				return TabCreateFragment.newInstance("TabCreateFragment");
 			}
 		}
 
