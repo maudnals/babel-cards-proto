@@ -20,15 +20,10 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity implements ActionBar.TabListener {
 
-	/**
-	 * pagerAdapter} that will provide
-	 * fragments for each of the sections. We use a {@link FragmentPagerAdapter}
-	 */
+	// provides fragments for each of the sections
 	SectionsPagerAdapter mSectionsPagerAdapter;
 
-	/**
-	 * The {@link ViewPager} that will host the section contents.
-	 */
+	// hosts the section contents.
 	ViewPager mViewPager;
 
 	@Override
@@ -36,12 +31,9 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		// Set up the action bar.
 		final ActionBar actionBar = getActionBar();
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
-		// Create the adapter that will return a fragment for each of the three
-		// primary sections of the activity.
 		mSectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
 
 		// Set up the ViewPager with the sections adapter.
@@ -69,18 +61,17 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 		}
 	}
 
+	// ACTION BAR
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
+		// add items to the action bar if present
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
 			return true;
@@ -88,11 +79,12 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 		return super.onOptionsItemSelected(item);
 	}
 
+	// TABS
+
 	@Override
 	public void onTabSelected(ActionBar.Tab tab,
 			FragmentTransaction fragmentTransaction) {
-		// When the given tab is selected, switch to the corresponding page in
-		// the ViewPager.
+		// switch to the corresponding page in the ViewPager.
 		mViewPager.setCurrentItem(tab.getPosition());
 	}
 
@@ -105,11 +97,10 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 	public void onTabReselected(ActionBar.Tab tab,
 			FragmentTransaction fragmentTransaction) {
 	}
-
-	/**
-	 * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
-	 * one of the sections/tabs/pages.
-	 */
+	
+	// PAGER ADAPTER
+	// return a fragment for each of the primary sections of the activity
+	
 	public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
 		public SectionsPagerAdapter(FragmentManager fm) {
@@ -124,7 +115,6 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 
 		@Override
 		public int getCount() {
-			// Show 3 total pages.
 			return 3;
 		}
 
@@ -140,39 +130,6 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 				return getString(R.string.title_section3).toUpperCase(l);
 			}
 			return null;
-		}
-	}
-
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-	public static class PlaceholderFragment extends Fragment {
-		/**
-		 * The fragment argument representing the section number for this
-		 * fragment.
-		 */
-		private static final String ARG_SECTION_NUMBER = "section_number";
-
-		/**
-		 * Returns a new instance of this fragment for the given section number.
-		 */
-		public static PlaceholderFragment newInstance(int sectionNumber) {
-			PlaceholderFragment fragment = new PlaceholderFragment();
-			Bundle args = new Bundle();
-			args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-			fragment.setArguments(args);
-			return fragment;
-		}
-
-		public PlaceholderFragment() {
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_main, container,
-					false);
-			return rootView;
 		}
 	}
 
