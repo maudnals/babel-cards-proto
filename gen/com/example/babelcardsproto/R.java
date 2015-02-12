@@ -9,6 +9,110 @@ package com.example.babelcardsproto;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int end_angle=0x7f010005;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int init_position=0x7f010007;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int max=0x7f010002;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pointer_color=0x7f01000a;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pointer_halo_color=0x7f01000b;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pointer_size=0x7f010001;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int show_text=0x7f010003;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int start_angle=0x7f010004;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int text_color=0x7f01000c;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int text_size=0x7f010006;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int wheel_active_color=0x7f010008;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int wheel_size=0x7f010000;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int wheel_unactive_color=0x7f010009;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -36,20 +140,21 @@ public final class R {
         public static final int ic_launcher=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000f;
-        public static final int addButton=0x7f08000c;
+        public static final int action_settings=0x7f080010;
+        public static final int addButton=0x7f08000d;
         public static final int checkBoxScore=0x7f080004;
-        public static final int grid_text=0x7f08000b;
+        public static final int grid_text=0x7f08000c;
         public static final int gridview=0x7f080002;
         public static final int pager=0x7f080000;
+        public static final int picker=0x7f08000a;
         public static final int playButton=0x7f080009;
         public static final int radioButtonCustom=0x7f080007;
         public static final int radioButtonRandom=0x7f080008;
         public static final int radioButtonSmart=0x7f080006;
-        public static final int review_row_title=0x7f08000d;
-        public static final int review_switch=0x7f08000e;
+        public static final int review_row_title=0x7f08000e;
+        public static final int review_switch=0x7f08000f;
         public static final int section_label=0x7f080001;
-        public static final int section_label_stats=0x7f08000a;
+        public static final int section_label_stats=0x7f08000b;
         public static final int textView1=0x7f080003;
         public static final int textView2=0x7f080005;
     }
@@ -110,4 +215,228 @@ public final class R {
         public static final int AppTheme=0x7f060001;
         public static final int ButtonBar=0x7f060002;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a HoloCircleSeekBar.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_end_angle com.example.babelcardsproto:end_angle}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_init_position com.example.babelcardsproto:init_position}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_max com.example.babelcardsproto:max}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_pointer_color com.example.babelcardsproto:pointer_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_pointer_halo_color com.example.babelcardsproto:pointer_halo_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_pointer_size com.example.babelcardsproto:pointer_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_show_text com.example.babelcardsproto:show_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_start_angle com.example.babelcardsproto:start_angle}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_text_color com.example.babelcardsproto:text_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_text_size com.example.babelcardsproto:text_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_wheel_active_color com.example.babelcardsproto:wheel_active_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_wheel_size com.example.babelcardsproto:wheel_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #HoloCircleSeekBar_wheel_unactive_color com.example.babelcardsproto:wheel_unactive_color}</code></td><td></td></tr>
+           </table>
+           @see #HoloCircleSeekBar_end_angle
+           @see #HoloCircleSeekBar_init_position
+           @see #HoloCircleSeekBar_max
+           @see #HoloCircleSeekBar_pointer_color
+           @see #HoloCircleSeekBar_pointer_halo_color
+           @see #HoloCircleSeekBar_pointer_size
+           @see #HoloCircleSeekBar_show_text
+           @see #HoloCircleSeekBar_start_angle
+           @see #HoloCircleSeekBar_text_color
+           @see #HoloCircleSeekBar_text_size
+           @see #HoloCircleSeekBar_wheel_active_color
+           @see #HoloCircleSeekBar_wheel_size
+           @see #HoloCircleSeekBar_wheel_unactive_color
+         */
+        public static final int[] HoloCircleSeekBar = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
+            0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b,
+            0x7f01000c
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.babelcardsproto.R.attr#end_angle}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.babelcardsproto:end_angle
+        */
+        public static final int HoloCircleSeekBar_end_angle = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.example.babelcardsproto.R.attr#init_position}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.babelcardsproto:init_position
+        */
+        public static final int HoloCircleSeekBar_init_position = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.example.babelcardsproto.R.attr#max}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.babelcardsproto:max
+        */
+        public static final int HoloCircleSeekBar_max = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.example.babelcardsproto.R.attr#pointer_color}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.babelcardsproto:pointer_color
+        */
+        public static final int HoloCircleSeekBar_pointer_color = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.example.babelcardsproto.R.attr#pointer_halo_color}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.babelcardsproto:pointer_halo_color
+        */
+        public static final int HoloCircleSeekBar_pointer_halo_color = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.example.babelcardsproto.R.attr#pointer_size}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.babelcardsproto:pointer_size
+        */
+        public static final int HoloCircleSeekBar_pointer_size = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.example.babelcardsproto.R.attr#show_text}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.babelcardsproto:show_text
+        */
+        public static final int HoloCircleSeekBar_show_text = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.example.babelcardsproto.R.attr#start_angle}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.babelcardsproto:start_angle
+        */
+        public static final int HoloCircleSeekBar_start_angle = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.example.babelcardsproto.R.attr#text_color}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.babelcardsproto:text_color
+        */
+        public static final int HoloCircleSeekBar_text_color = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.example.babelcardsproto.R.attr#text_size}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.babelcardsproto:text_size
+        */
+        public static final int HoloCircleSeekBar_text_size = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.example.babelcardsproto.R.attr#wheel_active_color}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.babelcardsproto:wheel_active_color
+        */
+        public static final int HoloCircleSeekBar_wheel_active_color = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.example.babelcardsproto.R.attr#wheel_size}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.babelcardsproto:wheel_size
+        */
+        public static final int HoloCircleSeekBar_wheel_size = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.example.babelcardsproto.R.attr#wheel_unactive_color}
+          attribute's value can be found in the {@link #HoloCircleSeekBar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.babelcardsproto:wheel_unactive_color
+        */
+        public static final int HoloCircleSeekBar_wheel_unactive_color = 9;
+    };
 }
