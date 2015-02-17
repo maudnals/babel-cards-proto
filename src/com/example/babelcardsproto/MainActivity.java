@@ -105,6 +105,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 			FragmentTransaction fragmentTransaction) {
 	}
 	
+	// needs to be here ! cause main a ctvity that conains the frag !
 	public void launchAddSetActivity(View view){
 		Intent myIntent = new Intent(this, AddSetActivity.class);
 		startActivity(myIntent);
