@@ -17,9 +17,8 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
-    <style name="ButtonBar" parent="android:Theme.Light">
-      <item name="android:background">#FF000000</item>
-      <item name="android:colorBackground">#FF000000</item>
+<!--     <style name="ButtonBar" parent="android:Theme.Light"> -->
+<!--       <item name="android:background">#CCFF0000</item> -->
+<!--     </style> -->
 
-    </style>
 </resources>

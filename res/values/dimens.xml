@@ -15,6 +15,6 @@
 	<dimen name="grid_vertical_spacing">2dp</dimen>
 	<dimen name="grid_column_width">120dp</dimen>
 	
-	<dimen name="grid_item_height">140dp</dimen>
+	<dimen name="semi_grid_item_height">70dp</dimen>
 	
 </resources>

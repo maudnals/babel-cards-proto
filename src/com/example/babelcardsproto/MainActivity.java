@@ -2,6 +2,10 @@ package com.example.babelcardsproto;
 
 import java.util.Locale;
 
+import com.example.babelcardsproto.tabs.TabCreateFragment;
+import com.example.babelcardsproto.tabs.TabReviewFragment;
+import com.example.babelcardsproto.tabs.TabStatsFragment;
+
 import android.app.Activity;
 import android.app.ActionBar;
 //import android.app.Fragment;
@@ -9,6 +13,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -98,6 +103,11 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 	@Override
 	public void onTabReselected(ActionBar.Tab tab,
 			FragmentTransaction fragmentTransaction) {
+	}
+	
+	public void launchAddSetActivity(View view){
+		Intent myIntent = new Intent(this, AddSetActivity.class);
+		startActivity(myIntent);
 	}
 	
 	// PAGER ADAPTER

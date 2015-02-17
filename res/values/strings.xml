@@ -2,7 +2,6 @@
 <resources>
 
     <string name="app_name">Babel Cards Proto</string>
-   	<string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     
     <string name="title_section1">Create/Edit</string>
@@ -17,5 +16,10 @@
     <string name="review_mode_button_random">Random</string>
     <string name="review_score_option">Score</string>
     <string name="review_score_checkbox">Score</string>
+    
+    <string name="set_title_hint">Title</string>
+    <string name="save_set">Save set</string>
+    
+    <string name="act_label_create_edit_cards">Create and edit cards</string>
 
 </resources>
