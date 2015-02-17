@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
          <activity
-            android:name=".AddSetActivity"
+            android:name="com.example.babelcardsproto.viewcreate.AddSetActivity"
             android:label="@string/act_label_create_edit_cards"
             android:parentActivityName=".MainActivity" >
              <meta-data

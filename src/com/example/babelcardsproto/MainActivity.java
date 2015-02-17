@@ -5,6 +5,7 @@ import java.util.Locale;
 import com.example.babelcardsproto.tabs.TabCreateFragment;
 import com.example.babelcardsproto.tabs.TabReviewFragment;
 import com.example.babelcardsproto.tabs.TabStatsFragment;
+import com.example.babelcardsproto.viewcreate.AddSetActivity;
 
 import android.app.Activity;
 import android.app.ActionBar;
@@ -27,13 +28,15 @@ import android.view.ViewGroup;
 import android.view.View.OnTouchListener;
 import android.widget.TextView;
 
-public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
+public class MainActivity extends FragmentActivity implements
+		ActionBar.TabListener {
 
 	// provides fragments for each of the sections
-	SectionsPagerAdapter mSectionsPagerAdapter;
+	private SectionsPagerAdapter mSectionsPagerAdapter;
 
-	// hosts the section contents.
+	// hosts the section's content
 	ViewPager mViewPager;
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +46,12 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		final ActionBar actionBar = getActionBar();
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
-		mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
+		mSectionsPagerAdapter = new SectionsPagerAdapter(
+				getSupportFragmentManager(),
+				getString(R.string.title_section1),
+				getString(R.string.title_section2),
+				getString(R.string.title_section3));
 
-		// Set up the ViewPager with the sections adapter.
 		mViewPager = (ViewPager) findViewById(R.id.pager);
 		mViewPager.setAdapter(mSectionsPagerAdapter);
 
@@ -69,19 +75,6 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 					.setTabListener(this));
 		}
 	}
-	
-	
-//	public void onActivityCreated(){
-//		gridItemView.setOnTouchListener(new OnTouchListener() {
-//			
-//			@Override
-//			public boolean onTouch(View v, MotionEvent event) {
-//				Intent intent = new Intent(getAc, AddSetActivity.class);
-//				return false;
-//			}
-//		});
-//	}
-	
 
 
 	// ACTION BAR
@@ -93,6 +86,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		return true;
 	}
 
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		int id = item.getItemId();
@@ -101,6 +95,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
 
 	// TABS
 
@@ -111,64 +106,24 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		mViewPager.setCurrentItem(tab.getPosition());
 	}
 
+
 	@Override
 	public void onTabUnselected(ActionBar.Tab tab,
 			FragmentTransaction fragmentTransaction) {
 	}
 
+
 	@Override
 	public void onTabReselected(ActionBar.Tab tab,
 			FragmentTransaction fragmentTransaction) {
 	}
-	
-	// needs to be here ! cause main a ctvity that conains the frag !
-	public void launchAddSetActivity(View view){
+
+
+	// ACTIVITIES LAUNCHERS
+
+	public void launchAddSetActivity(View view) {
 		Intent myIntent = new Intent(this, AddSetActivity.class);
 		startActivity(myIntent);
-	}
-	
-	// PAGER ADAPTER
-	// return a fragment for each of the primary sections of the activity
-	
-	public class SectionsPagerAdapter extends FragmentPagerAdapter {
-
-		public SectionsPagerAdapter(android.support.v4.app.FragmentManager fm) {
-			super(fm);
-		}
-
-		@Override
-		public Fragment getItem(int position) {
-			// instantiates the fragment for the given page
-			switch (position) {
-			case 0:
-				return TabCreateFragment.newInstance("TabCreateFragment");
-			case 1:
-				return TabStatsFragment.newInstance("TabStatsFragment");
-			case 2:
-				return TabReviewFragment.newInstance("TabReviewFragment");
-			default:
-				return TabCreateFragment.newInstance("TabCreateFragment");
-			}
-		}
-
-		@Override
-		public int getCount() {
-			return 3;
-		}
-
-		@Override
-		public CharSequence getPageTitle(int position) {
-			Locale l = Locale.getDefault();
-			switch (position) {
-			case 0:
-				return getString(R.string.title_section1).toUpperCase(l);
-			case 1:
-				return getString(R.string.title_section2).toUpperCase(l);
-			case 2:
-				return getString(R.string.title_section3).toUpperCase(l);
-			}
-			return null;
-		}
 	}
 
 }
