@@ -21,8 +21,10 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnTouchListener;
 import android.widget.TextView;
 
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
@@ -67,6 +69,20 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 					.setTabListener(this));
 		}
 	}
+	
+	
+//	public void onActivityCreated(){
+//		gridItemView.setOnTouchListener(new OnTouchListener() {
+//			
+//			@Override
+//			public boolean onTouch(View v, MotionEvent event) {
+//				Intent intent = new Intent(getAc, AddSetActivity.class);
+//				return false;
+//			}
+//		});
+//	}
+	
+
 
 	// ACTION BAR
 
